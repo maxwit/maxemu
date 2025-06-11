@@ -217,7 +217,7 @@ def create_vm(host: Host, guest: Guest):
 
     qemu_config.append(f'"{guest.emulator}"')
 
-    qemu_config.append('-nodefaults')
+    # qemu_config.append('-nodefaults')
 
     qemu_config.append('-machine ' + guest.model)
 
