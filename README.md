@@ -5,6 +5,10 @@ XVM是一个全平台虚拟机管理器（cross-platform virtual machine manager
 
 前期用python辅助架构设计和技术验证，之后用Flutter或Kivy框架（待定）开发App。
 
+## Quick Start
+包含2个工具，vm_install.py和launch.py，前者用于安装OS，后者用于启动已经安装的OS。
+
+
 ## 各VMM支持的软硬件平台
 
 ### Host平台

@@ -29,14 +29,14 @@ QEMU_ARCH_RV32 = 'riscv32'
 QEMU_ARCH_RV64 = 'riscv64'
 
 arch_patterns = {
-    r'arm?64': QEMU_ARCH_ARM64,
+    r'arm64': QEMU_ARCH_ARM64,
     r'aarch64': QEMU_ARCH_ARM64,
-    r'x86?64': QEMU_ARCH_X64,
+    r'x86.64': QEMU_ARCH_X64,
     r'amd64': QEMU_ARCH_X64,
     r'x64': QEMU_ARCH_X64,
     r'i[3456]86': QEMU_ARCH_X32,
-    r'risc?v?64': QEMU_ARCH_RV64,
-    r'risc?v?32': QEMU_ARCH_RV32
+    r'risc.v.64': QEMU_ARCH_RV64,
+    r'risc.v.32': QEMU_ARCH_RV32
 }
 
 
@@ -55,7 +55,12 @@ codename_db = {
     'bionic':  '18.04',
     'focal':   '20.04',
     'jammy':   '22.04',
-    'kinetic': '22.10'
+    'kinetic': '22.10',
+    'lunar':   '23.04',
+    'mantic':  '23.10',
+    'noble':   '24.04',
+    'oracular':'24.10',
+    'plucky':  '25.04',
 }
 
 
@@ -278,8 +283,8 @@ def create_vm(host: Host, guest: Guest):
     qemu_config.append(f'-device virtio-net-pci,mac={mac},netdev=nic0')
     qemu_config.append('-netdev user,id=nic0')
 
-    qemu_config.append('-device intel-hda')
-    qemu_config.append('-device hda-duplex')
+    # qemu_config.append('-device intel-hda')
+    # qemu_config.append('-device hda-duplex')
 
     qemu_config.append('-device virtio-gpu-pci')
     if host.os_name == UNAME_OS_DARWIN:
