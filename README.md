@@ -1,7 +1,7 @@
-# XVM
+# MaxEmu
 
 ## 介绍
-XVM是一个全平台虚拟机管理器（cross-platform virtual machine manager）。
+MaxEmu是一个全平台虚拟机管理器（cross-platform virtual machine manager）。
 
 前期用python辅助架构设计和技术验证，之后用Flutter或Kivy框架（待定）开发App。
 
@@ -21,7 +21,7 @@ python3 ~/maxemu/ubuntu-24.04.2/launch.py
 
 ### Host平台
 
- |         |        XVM         |       VMWare       |         PD         |     VirtualBox     |        UTM         |    Virt-manager    |
+ |         |        MaxEmu         |       VMWare       |         PD         |     VirtualBox     |        UTM         |    Virt-manager    |
  | :-----: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: |
  | Windows | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |        :x:         |        :x:         |
  |  Linux  | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |        :x:         | :white_check_mark: |
@@ -32,7 +32,7 @@ python3 ~/maxemu/ubuntu-24.04.2/launch.py
 
 #### Guest平台
 
- |            |        XVM         |       VMWare       |         PD         |     VirtualBox     |        UTM         |    Virt-manager    |
+ |            |        MaxEmu         |       VMWare       |         PD         |     VirtualBox     |        UTM         |    Virt-manager    |
  | :--------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: | :----------------: |
  | 同构指令集 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
  | 异构/交叉  | :white_check_mark: |        :x:         |        :x:         |        :x:         | :white_check_mark: | :white_check_mark: |
